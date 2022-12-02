@@ -48,11 +48,11 @@ Alternatively you can check the permissions for both of the folders to make sure
 
 ## Download errors:
 
-### HTTP Error 404:
+### HTTP Errors:
 
 ![](https://media.discordapp.net/attachments/735577694489804986/1048024154877730816/image.png)
 
-This error probably means that GitHub is down or is having server issues. You'll have to wait until the issue is resolved, or install the files manually.
+These errors probably mean that GitHub is down or having server issues. You'll have to wait until the issue is resolved, or install the files manually.
 
 ### Urlopen error:
 
@@ -85,4 +85,5 @@ Example (from beta version 1.0):
 
 ![](https://media.discordapp.net/attachments/597729491615350797/1042163177414197358/image.png)
 
+© 2022 Shadow Doggo.
 
