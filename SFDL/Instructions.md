@@ -16,8 +16,6 @@ Download the [Updater](https://github.com/ShadowDoggo/sfdl_files/raw/main/SFDL/U
 
 <img src="https://media.discordapp.net/attachments/735577694489804986/1048941610970398730/image.png" width="500"/>
 
-##
-
 ### Step 2:
 
 Run the Updater. It'll ask you if you want to download SFDL for Cemu, click yes.
