@@ -55,7 +55,7 @@ Open Cemu, right click on Splatoon and select Edit graphic packs.
 
 <img src="https://media.discordapp.net/attachments/735577694489804986/1048955783490056243/image.png" width="400"/>
 
-Under the Mods section, enable the Custom_splatfest graphic pack.
+Under the Mods section, enable the Custom Splatfest graphic pack.
 
 <img src="https://media.discordapp.net/attachments/735577694489804986/1048955289044537444/image.png" width="500"/>
 
@@ -79,8 +79,6 @@ You can now participate in splatfest matches! Get your splatfest team role and h
 
 Click the Uninstall Files button. Your game should now be back to normal.
 
-To recover your previous memory searcher file, go to the memorySearcher folder, delete the .ini file and rename the .ini.bak to .ini
-  
 <img src="https://media.discordapp.net/attachments/735577694489804986/1048959823565291530/image.png" width="500"/>
 
 © 2022 Shadow Doggo.
