@@ -85,5 +85,6 @@ Example (from beta version 1.0):
 
 ![](https://media.discordapp.net/attachments/597729491615350797/1042163177414197358/image.png)
 
-© 2022 Shadow Doggo.
+##
 
+© 2022 Shadow Doggo.
