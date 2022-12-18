@@ -79,6 +79,4 @@ You can now participate in splatfest matches! Get your splatfest team role and h
 
 Click the Uninstall Files button. Your game should now be back to normal.
 
-<img src="https://media.discordapp.net/attachments/735577694489804986/1048959823565291530/image.png" width="500"/>
-
 © 2022 Shadow Doggo.
