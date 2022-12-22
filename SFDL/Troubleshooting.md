@@ -81,6 +81,8 @@ The app's executable is unsigned, so Windows Defender detects it as suspicious. 
 
 This is a very rare error that occurs if something went really wrong. It can be caused by a corrupted executable, weird permission issues, a broken VC++ instalation and other issues with your system. Try deleting the app's executable and running the updater again.
 
+If the message says anything about "readconfig", delete the app's config file (sfdl/Config/config.cfg).
+
 Example (from beta version 1.0):
 
 ![](https://media.discordapp.net/attachments/597729491615350797/1042163177414197358/image.png)
