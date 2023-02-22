@@ -31,21 +31,21 @@ It'll download the latest version of SFDL. You should see a new app called "SFDL
 
 ### Step 1:
 
-Run SFDL for Cemu. It'll download the latest splatfest and restart.
+Run SFDL for Cemu.
 
-<img src="https://media.discordapp.net/attachments/735577694489804986/1048945156843372554/image.png" width="400"/>
+<img src="https://media.discordapp.net/attachments/735577694489804986/1077996229063102494/image.png" width="400"/>
 
 ### Step 2:
 
-Open the settings and set your game's region.
+Open the settings and set your game's region and account ID (if you're using the default account, leave it at 80000001).
 
-<img src="https://media.discordapp.net/attachments/735577694489804986/1048945476872962229/image.png" width="250"/>
+<img src="https://media.discordapp.net/attachments/735577694489804986/1077996356658012160/image.png" width="250"/>
 
 ### Step 3:
 
 Click the Install Files button. If nothing went wrong, the app will install the splatfest and restart.
 
-<img src="https://media.discordapp.net/attachments/735577694489804986/1048948552258306200/image.png" width="400"/>
+<img src="https://media.discordapp.net/attachments/735577694489804986/1077996532470665296/image.png" width="400"/>
 
 ## After installing
 
@@ -57,7 +57,7 @@ Open Cemu, right click on Splatoon and select Edit graphic packs.
 
 Under the Mods section, enable the Custom Splatfest graphic pack.
 
-<img src="https://media.discordapp.net/attachments/735577694489804986/1048955289044537444/image.png" width="500"/>
+<img src="https://media.discordapp.net/attachments/735577694489804986/1077997270215184454/image.png" width="500"/>
 
 ### Step 2:
 
@@ -75,9 +75,13 @@ Before going into the lobby, open Tools > Memory searcher, make sure that the po
 
 You can now participate in splatfest matches! Get your splatfest team role and head over to the matchmaking channel.
 
+<img src="https://media.discordapp.net/attachments/735577694489804986/1077997904737873940/Screenshot_2023-02-22_17-58-35.png?width=1607&height=904" width="500"/>
+
 ## Uninstalling the Splatfest
 
 Click the Uninstall Files button. Your game should now be back to normal.
+
+To restore your previous memorySearcher file, copy the 00050000(titleid).bak file from the sfdl folder to the memorySearcher folder and remove the .bak extension.
 
 ##
 
