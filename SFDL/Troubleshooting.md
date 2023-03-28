@@ -4,6 +4,12 @@ A small guide to help you troubleshoot common errors you may encounter in SFDL f
 
 ## Cemu related errors
 
+### Splatoon causes Cemu to crash after uninstalling the splatfest files:
+
+If you're using cemu 1.27 or older, you'll need to manually reinstall the boss files after uninstalling the splatfest. This is due to a bug that was fixed in 2.0.
+
+You can download the clean boss files from [here](https://github.com/ShadowDoggo/sfdl_files/tree/main/Files%2FClean). Place them in mlc01/usr/boss/00050000/titleid/user/common/data/optdat2/ (where "titleid" is 10176900 for USA, 10176a00 for EUR and 10162b00 for JPN).
+
 ### Cemu.exe not found:
 ![](https://media.discordapp.net/attachments/735577694489804986/1048017855989436486/image.png)
 
