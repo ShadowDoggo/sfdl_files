@@ -87,11 +87,15 @@ The app's executable is unsigned, so Windows Defender detects it as suspicious. 
 
 This is a very rare error that occurs if something went really wrong. It can be caused by a corrupted executable, weird permission issues, a broken VC++ instalation and other issues with your system. Try deleting the app's executable and running the updater again.
 
-If the message says anything about "readconfig", delete the app's config file (sfdl/Config/config.cfg).
+If the message says anything about "readconfig", delete the app's config file (sfdl/config.cfg).
 
 Example (from beta version 1.0):
 
 ![](https://media.discordapp.net/attachments/597729491615350797/1042163177414197358/image.png)
+
+### Splatoon save or memory searcher file got wiped:
+
+The app automatically backs up your save and memory searcher files if you have the option enabled. To restore the save, right click on Splatoon > Save directory > user > ID > delete the old save > copy the save.dat.bak from the sfdl folder > remove the .bak extension. To restore the memory searcher file, remove the old .ini file from the memorySearcher folder > copy the .ini.bak file from the sfdl folder to the memorySearcher folder > remove the .bak extension.
 
 ##
 
