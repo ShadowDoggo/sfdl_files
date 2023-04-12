@@ -6,7 +6,7 @@ If you're encountering an error or any of the steps are unclear, check the [Trou
 
 ## Online files
 
-In order to participate in the splatfests, you'll need to dump the online files from your Wii U using [this](https://cemu.cfw.guide/online-play.html) guide. Pretendo servers **do not** work with the splatfests.
+Due to the official servers being taken offline, we are currently hosting our splatfests on Pretendo servers. Use [this](https://pretendo.network/docs/install) guide to install Pretendo.
 
 ## Installing SFDL for Cemu
 
