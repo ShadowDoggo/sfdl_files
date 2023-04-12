@@ -52,7 +52,7 @@ If the app is still unable to install the files, it probably means it doesn't ha
 
 Alternatively you can check the permissions for both of the folders to make sure the app can write to them.
 
-## Download errors:
+## Download errors
 
 ### HTTP Errors:
 
@@ -67,7 +67,7 @@ These errors probably mean that GitHub is down or having server issues. You'll h
 
 These errors mean that you don't have an internet connection, or the app is blocked by your firewall/antivirus. Running the app as admin should fix this issue. If not, you'll need to whitelist it in your firewall settings.
 
-## Other errors:
+## Other errors
 
 ### Unable to create config file:
 
@@ -95,7 +95,7 @@ Example (from beta version 1.0):
 
 ### Splatoon save or memory searcher file got wiped:
 
-The app automatically backs up your save and memory searcher files if you have the option enabled. To restore the save, right click on Splatoon > Save directory > user > ID > delete the old save > copy the save.dat.bak from the sfdl folder > remove the .bak extension. To restore the memory searcher file, remove the old .ini file from the memorySearcher folder > copy the .ini.bak file from the sfdl folder to the memorySearcher folder > remove the .bak extension.
+The app automatically backs up your save and memory searcher files in case anything goes wrong, if you have the option enabled. To restore the save, right click on Splatoon > Save directory > user > ID > delete the old save > copy the save.dat.bak from the sfdl folder > remove the .bak extension. To restore the memory searcher file, remove the old .ini file from the memorySearcher folder > copy the .ini.bak file from the sfdl folder to the memorySearcher folder > remove the .bak extension.
 
 ##
 
