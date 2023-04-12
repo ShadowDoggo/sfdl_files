@@ -67,9 +67,9 @@ Launch Splatoon. The splatfest should now be active.
 
 <sub><sup>old screenshot ik</sup></sub>
 
-### Step 3:
+### ~~Step 3:~~
 
-Before going into the lobby, open Tools > Memory searcher, make sure that the power reset entries are enabled and leave the window open.
+~~Before going into the lobby, open Tools > Memory searcher, make sure that the power reset entries are enabled and leave the window open.~~ Not required on Pretendo.
 
 <img src="https://media.discordapp.net/attachments/735577694489804986/1048958439734378499/image.png" width="500"/>
 
