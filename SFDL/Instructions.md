@@ -6,7 +6,9 @@ If you're encountering an error or any of the steps are unclear, check the [Trou
 
 ## Online files
 
-Due to the official servers being taken offline, we are currently hosting our splatfests on Pretendo servers. Use [this](https://pretendo.network/docs/install) guide to install Pretendo.
+<sub>The servers are back! Yay!!</sub>
+
+In order to participate in the splatfests, you'll need to dump the online files from your Wii U using [this](https://cemu.cfw.guide/online-play.html) guide. Pretendo servers **do not** work with the splatfests.
 
 ## Installing SFDL for Cemu
 
@@ -64,8 +66,6 @@ Under the Mods section, enable the Custom Splatfest graphic pack.
 Launch Splatoon. The splatfest should now be active.
 
 <img src="https://media.discordapp.net/attachments/597729491615350797/1033436709548994580/unknown.png" width="500"/>
-
-<sub><sup>old screenshot ik</sup></sub>
 
 ### Step 3:
 
