@@ -30,7 +30,7 @@ This error means the app is unable to read Cemu's settings file. This is also us
 
 ![](https://media.discordapp.net/attachments/735577694489804986/1048019770907295744/image.png)
 
-This error means the app couldn't install the splatfest files. It's commonly caused by setting the wrong region in the settings. It can also be caused by an incorrect MLC path, the app not having write permissions to the MLC folder or by something else blocking access to the files. Close Cemu before installing the files, if the error persists even though all the settings are correct, use resource monitor to check if anything is accessing the files. Restarting your PC can also help.
+This error means the app couldn't install the splatfest files. It's commonly caused by setting the wrong region in the settings. It can also be caused by an incorrect MLC path, the app not having write permissions to the MLC folder, the boss data folder not existing, or by something else blocking access to the files. Try launching the game with online mode enabled and entering the lobby to create the boss data. Close Cemu and check if anything else is accessing the mlc folder before installing the files.
 
 ### Install failed. No such file or directory: './memorySearcher/...':
 
