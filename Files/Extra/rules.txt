@@ -1,0 +1,6 @@
+[Definition]
+titleIds = 0005000010176900,0005000010176A00,0005000010162B00
+name = Custom Splatfest
+path = "Splatoon/Mods/Custom Splatfest"
+description = Enables custom miiverse posts and other features during a custom splatfest (includes nohash).
+version = 7

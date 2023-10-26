@@ -1,0 +1,6 @@
+[SplatoonNoHash]
+moduleMatches = 0x659C782E
+
+0x027B3048 = lis    r4, 0x7AAF
+0x027B304C = ori    r4, r4,0x4CD4
+0x027B3050= stwu    r4, 0(r30)
