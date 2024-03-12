@@ -620,5 +620,6 @@ if not os.path.isfile("./sfdl/config.cfg"):
 
 if __name__ == "__main__":
     root = tk.Tk()
+    root.tk.call('tk', 'scaling', 1.7)
     app = App(master=root)
     app.mainloop()
