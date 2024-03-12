@@ -37,9 +37,9 @@ from tkinter import messagebox
 from threading import Thread
 from ctypes import windll
 
-windll.shcore.SetProcessDpiAwareness(0)  # Disable DPI awareness (messes with the GUI otherwise).
+windll.shcore.SetProcessDpiAwareness(1)  # Enable DPI awareness (I trust Windows to not mess up the GUI).
 
-thisVersion = "v1.0b_devbeta1"
+thisVersion = "v1.0b_devbeta2"
 
 class App(tk.Frame):
     def __init__(self, master=None):
@@ -122,7 +122,7 @@ class App(tk.Frame):
             self.region = self.regionType
         try:
             self.fesImg = urllib.request.urlopen("https://github.com/ShadowDoggo/sfdl_files/raw/main/Files/image.png").read()
-            API = requests.get(url = "https://splatfest.discloud.app/api/splatfest-info/lastest") # Get fest data from API.
+            API = requests.get(url="https://splatfest.discloud.app/api/splatfest-info/lastest")  # Get fest data from API.
             fesData = API.json()
             self.fesID = str(fesData["id"])
             teamAlpha = fesData["team_alpha"]
@@ -163,9 +163,9 @@ class App(tk.Frame):
         self.var1.set("Uninstall Files")
         self.frame = tk.Frame(self.master, width=450, height=390)
         try:
-            self.img = tk.PhotoImage(data = self.fesImg)
+            self.img = tk.PhotoImage(data=self.fesImg)
         except:
-            self.img = tk.PhotoImage(file = "./sfdl/assets/image.png")  # os.path.join(sys._MEIPASS, "./image.png").
+            self.img = tk.PhotoImage(file="./sfdl/assets/image.png")  # os.path.join(sys._MEIPASS, "./image.png").
         self.canvas = tk.Canvas(self.frame, width=384, height=216)
         self.label0 = ttk.Label(self.frame, text=self.fesTheme)
         self.label1 = ttk.Label(self.frame, text=f"Starts: {self.fesStart}")
@@ -181,17 +181,15 @@ class App(tk.Frame):
         self.canvas.place(y=170, relx=0.5, anchor=tk.CENTER)
         self.canvas.create_image(0,0, anchor=tk.NW, image=self.img)
         self.label0.place(y=20, relx=0.5, anchor=tk.CENTER)
-        self.label1.place(x=40, y=30)
-        self.label2.place(x=320, y=30)
+        self.label1.place(x=35, y=30)  # The positions for these need to be fixed.
+        self.label2.place(x=300, y=30)
         self.label3.place(y=120, relx=0.5, rely=0.5, anchor=tk.CENTER)
         self.label4.place(y=140, relx=0.5, rely=0.5, anchor=tk.CENTER)
         self.label5.place(y=100, relx=0.5, rely=0.5, anchor=tk.CENTER)
-        self.button0.place(y=169, x=-51, relx=0.5, rely=0.5, anchor=tk.CENTER)
-        self.button1.place(y=169, x=51, relx=0.5, rely=0.5, anchor=tk.CENTER)
-        self.button2.place(y=169, x=170, relx=0.5, rely=0.5, anchor=tk.CENTER)
-        self.button3.place(y=169, x=200, relx=0.5, rely=0.5, anchor=tk.CENTER)
-        if not os.path.isfile("./Cemu.exe"):
-            messagebox.showwarning(title="SFDL for Cemu", message="Cemu.exe not found. Please place the app in the root of your Cemu folder. Check the troubleshooting guide for more info.")
+        self.button0.place(y=170, x=-65, relx=0.5, rely=0.5, anchor=tk.CENTER)
+        self.button1.place(y=170, x=65, relx=0.5, rely=0.5, anchor=tk.CENTER)
+        self.button2.place(y=170, x=166, relx=0.5, rely=0.5, anchor=tk.CENTER)
+        self.button3.place(y=170, x=200, relx=0.5, rely=0.5, anchor=tk.CENTER)
 
     def installmsg(self):
         if not self.isFuncActive:
@@ -218,7 +216,7 @@ class App(tk.Frame):
         if self.infoWindow is None:
             self.infoWindow = tk.Toplevel(self.master)
             self.infoWindow.protocol("WM_DELETE_WINDOW", lambda: self.closewindow(0))
-            self.infoWindow.geometry("330x160")
+            self.infoWindow.geometry("400x180")
             self.infoWindow.resizable(False, False)
             self.infoWindow.title("SFDL for Cemu")
             self.infoWindow.lift()
@@ -228,16 +226,16 @@ class App(tk.Frame):
             except:
                 pass
             self.infoWindow.bell()
-            self.iFrame = ttk.LabelFrame(self.infoWindow, text="Info", width=320, height=150)
+            self.iFrame = ttk.LabelFrame(self.infoWindow, text="Info", width=390, height=170)
             self.iLabel0 = ttk.Label(self.iFrame, text=f"SFDL for Cemu {thisVersion}\n© 2022 Shadow Doggo. All rights reserved.\nThis program comes with ABSOLUTELY NO WARRANTY.\nThe splatfest files and artwork are made by the\nSplatfestival team.")
-            self.iButton0 = ttk.Button(self.iFrame, text="Splatfestival Discord", width=22, command=lambda:
-                webbrowser.open("https://discord.gg/grMSxZf", new=0))
-            self.iButton1 = ttk.Button(self.iFrame, text="Troubleshooting Guide", width=22, command=lambda:
-                webbrowser.open("https://github.com/ShadowDoggo/sfdl_files/blob/main/SFDL/Troubleshooting.md", new=0))
+            self.iButton0 = ttk.Button(self.iFrame, text="Splatfestival Discord", width=21, command=lambda:
+                                       webbrowser.open("https://discord.gg/grMSxZf", new=0))
+            self.iButton1 = ttk.Button(self.iFrame, text="Troubleshooting Guide", width=21, command=lambda:
+                                       webbrowser.open("https://github.com/ShadowDoggo/sfdl_files/blob/main/SFDL/Troubleshooting.md", new=0))
             self.iFrame.pack(pady=5, padx=5)
-            self.iLabel0.place(y=13, x=150, relx=0.5, rely=0.5, anchor=tk.SE)
-            self.iButton0.place(y=47, x=-72, relx=0.5, rely=0.5, anchor=tk.CENTER)
-            self.iButton1.place(y=47, x=72, relx=0.5, rely=0.5, anchor=tk.CENTER)
+            self.iLabel0.place(y=25, x=185, relx=0.5, rely=0.5, anchor=tk.SE)
+            self.iButton0.place(y=50, x=-90, relx=0.5, rely=0.5, anchor=tk.CENTER)
+            self.iButton1.place(y=50, x=90, relx=0.5, rely=0.5, anchor=tk.CENTER)
         else:
             self.infoWindow.lift()
             self.infoWindow.focus()
@@ -246,7 +244,7 @@ class App(tk.Frame):
         if self.settingsWindow is None:
             self.settingsWindow = tk.Toplevel(self.master)
             self.settingsWindow.protocol("WM_DELETE_WINDOW", lambda: self.closewindow(1))
-            self.settingsWindow.geometry("210x350")
+            self.settingsWindow.geometry("240x380")
             self.settingsWindow.resizable(False, False)
             self.settingsWindow.title("SFDL for Cemu")
             self.settingsWindow.lift()
@@ -262,34 +260,34 @@ class App(tk.Frame):
             self.cVar4 = tk.StringVar()  # Backup checkbutton.
             self.cVar5 = tk.StringVar()  # Account ID combobox.
             self.cVar6 = tk.StringVar()  # Mystery checkbutton.
-            self.sFrame = ttk.Labelframe(self.settingsWindow , text="Settings", width=200, height=340)
+            self.sFrame = ttk.Labelframe(self.settingsWindow, text="Settings", width=230, height=370)
             self.sLabel0 = ttk.Label(self.sFrame, text="Region")
             self.sLabel1 = ttk.Label(self.sFrame, text="MLC Location")
-            self.sLabel3 = ttk.Label(self.sFrame, text="Account ID")
             self.sLabel2 = ttk.Label(self.sFrame, textvariable=self.cVar3)
+            self.sLabel3 = ttk.Label(self.sFrame, text="Account ID")
             self.sButton0 = ttk.Button(self.sFrame, text="Apply", width=10, command=self.makeconfig)
             self.sButton1 = ttk.Button(self.sFrame, text="Browse", width=10, command=self.pathselect)
             self.scBox0 = ttk.Combobox(self.sFrame, textvariable=self.cVar0, width=5)
-            self.scBox1 = ttk.Combobox(self.sFrame, textvariable = self.cVar1, width=10)
-            self.scBox2 = ttk.Combobox(self.sFrame, textvariable = self.cVar5, width=10)
-            self.sEntry0 = ttk.Entry(self.sFrame, textvariable=self.cVar2, width=29)
-            self.scButton0 = ttk.Checkbutton(self.sFrame, text="Backup save & memory\nsearcher file",variable=self.cVar4,
+            self.scBox1 = ttk.Combobox(self.sFrame, textvariable=self.cVar1, width=10)
+            self.scBox2 = ttk.Combobox(self.sFrame, textvariable=self.cVar5, width=10)
+            self.sEntry0 = ttk.Entry(self.sFrame, textvariable=self.cVar2, width=25)
+            self.scButton0 = ttk.Checkbutton(self.sFrame, text="Backup save & memory\nsearcher file", variable=self.cVar4,
                                              onvalue="true", offvalue="false", command=self.hide2)
-            self.scButton1 = ttk.Checkbutton(self.sFrame, text="Mystery setting",variable=self.cVar6, onvalue="true",
+            self.scButton1 = ttk.Checkbutton(self.sFrame, text="Mystery setting", variable=self.cVar6, onvalue="true",
                                              offvalue="false")
             self.sFrame.pack(pady=5, padx=5)
             self.sLabel0.place(x=5, y=0)
-            self.sLabel1.place(x=5, y=45)
-            self.sLabel2.place(x=5, y=87)
+            self.sLabel1.place(x=5, y=50)
+            self.sLabel2.place(x=5, y=100)
             self.sLabel3.place(x=5, y=195)
-            self.sButton0.place(x=61, y=280)
-            self.sButton1.place(x=7, y=133)
-            self.scBox0.place(x=7, y=20)
-            self.scBox1.place(x=7, y=65)
-            self.scBox2.place(x=7, y=215)
-            self.sEntry0.place(x=7, y=107)
-            self.scButton0.place(x=7, y=160)
-            self.scButton1.place(x=7, y=242)
+            self.sButton0.place(y=320, relx=0.5, anchor=tk.CENTER)
+            self.sButton1.place(x=7, y=155)
+            self.scBox0.place(x=7, y=25)
+            self.scBox1.place(x=7, y=75)
+            self.scBox2.place(x=7, y=235)
+            self.sEntry0.place(x=7, y=125)
+            self.scButton0.place(x=7, y=185)
+            self.scButton1.place(x=7, y=265)
             self.scBox0["values"] = ("Auto", "USA", "EUR", "JPN")
             self.scBox0["state"] = "readonly"
             self.scBox1["values"] = ("Auto", "Default", "Custom")
@@ -340,7 +338,7 @@ class App(tk.Frame):
             self.settingsWindow.lift()
             self.settingsWindow.focus()
 
-    def hide(self, event):  # This probably shouldn't exist.
+    def hide(self):  # This probably shouldn't exist.
         if self.scBox1.get() == "Custom":
             self.cVar3.set("Custom MLC Path:")
             self.sButton1.config(state="normal")
@@ -355,7 +353,7 @@ class App(tk.Frame):
             if self.cemuSettings is not None:
                 mlcBase = self.cemuSettings[2].text
                 if mlcBase is not None:
-                    mlc = mlcBase.replace("\\", "/" )
+                    mlc = mlcBase.replace("\\", "/")
                     self.cVar2.set(mlc)
                 else:
                     self.cVar2.set("Default")
@@ -382,7 +380,7 @@ class App(tk.Frame):
             if self.cemuSettings is not None:
                 mlcBase = self.cemuSettings[2].text
                 if mlcBase is not None:
-                    mlc = mlcBase.replace("\\", "/" )
+                    mlc = mlcBase.replace("\\", "/")
                     self.mlcFolder = mlc
                 else:
                     mlc = "./mlc01"
@@ -414,7 +412,7 @@ class App(tk.Frame):
         restart()
 
     def pathselect(self):
-        self.mlcFolder = filedialog.askdirectory(initialdir="./",title="Select mlc01 folder")
+        self.mlcFolder = filedialog.askdirectory(initialdir="./", title="Select mlc01 folder")
         self.cVar2.set(self.mlcFolder)
         self.settingsWindow.lift()
         self.settingsWindow.focus()
@@ -470,7 +468,7 @@ class App(tk.Frame):
             fileList = urllib.request.urlopen("https://raw.githubusercontent.com/ShadowDoggo/sfdl_files/main/SFDL/file_list.txt")
             fileListSheldon = urllib.request.urlopen("https://raw.githubusercontent.com/Sheldon10095/Splatfestival_StaffFiles/main/Other/FileList")
             if not os.path.isdir("./graphicPacks/Splatoon_CustomSplatfest"):
-                    os.mkdir("./graphicPacks/Splatoon_CustomSplatfest")
+                os.mkdir("./graphicPacks/Splatoon_CustomSplatfest")
             for line in fileList:
                 path = (line.decode('utf-8')).strip("\n")
                 urllib.request.urlretrieve(f"https://github.com/ShadowDoggo/sfdl_files/raw/main/Files/Extra/{path}",
@@ -587,7 +585,7 @@ if not os.path.isfile("./sfdl/config.cfg"):
         root = tree.getroot()
         mlcPath1_s = root[2].text
         if mlcPath1_s is not None:
-            mlcPath_s = mlcPath1_s.replace("\\", "/" )
+            mlcPath_s = mlcPath1_s.replace("\\", "/")
         else:
             mlcPath_s = "./mlc01"
         pathType_s = "Auto"
@@ -622,5 +620,5 @@ if not os.path.isfile("./sfdl/config.cfg"):
 
 if __name__ == "__main__":
     root = tk.Tk()
-    app = App(master = root)
+    app = App(master=root)
     app.mainloop()
