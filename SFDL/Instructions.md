@@ -26,7 +26,7 @@ Distros tested so far: Ubuntu, Mint.
 
 Available only as Python script. Requires Python 3.10 or newer and the [requests](https://pypi.org/project/requests/) module.
 
-[Python script]([./sfdl_for_cemu_linux.zip](https://github.com/ShadowDoggo/sfdl_files/raw/main/SFDL/sfdl_for_cemu_linux.zip)
+[Python script](https://github.com/ShadowDoggo/sfdl_files/raw/main/SFDL/sfdl_for_cemu_linux.zip)
 
 ## Installing the Splatfest
 
