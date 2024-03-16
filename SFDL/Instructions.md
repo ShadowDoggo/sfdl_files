@@ -14,9 +14,9 @@ In order to participate in the splatfests, you'll need to dump the online files 
 
 The Python version requires Python 3.10 or newer and the [requests](https://pypi.org/project/requests/) module.
 
-[Executable](./SFDL_Cemu.exe)
+[Executable](https://github.com/ShadowDoggo/sfdl_files/raw/main/SFDL/SFDL_Cemu.exe)
 
-[Python script](./sfdl_for_cemu_win.zip)
+[Python script](https://github.com/ShadowDoggo/sfdl_files/raw/main/SFDL/sfdl_for_cemu_win.zip)
 
 Extract these to the root of your Cemu folder (where Cemu.exe is).
 
@@ -26,7 +26,7 @@ Distros tested so far: Ubuntu, Mint.
 
 Available only as Python script. Requires Python 3.10 or newer and the [requests](https://pypi.org/project/requests/) module.
 
-[Python script](./sfdl_for_cemu_linux.zip)
+[Python script]([./sfdl_for_cemu_linux.zip](https://github.com/ShadowDoggo/sfdl_files/raw/main/SFDL/sfdl_for_cemu_linux.zip))
 
 ## Installing the Splatfest
 
