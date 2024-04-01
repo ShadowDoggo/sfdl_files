@@ -10,6 +10,8 @@ In order to participate in the splatfests, you'll need to dump the online files 
 
 ## Downloads
 
+#### Note: If you're updating from an older version, delete the old config.cfg file.
+
 ### Windows:
 
 The Python version requires Python 3.10 or newer and the [requests](https://pypi.org/project/requests/) module.
