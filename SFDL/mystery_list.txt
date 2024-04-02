@@ -1,2 +1,1 @@
 content/Sound/Resource/Stream/STRM_Lobby.bfstm
-content/Sound/Resource/Stream/STRM_VSFest_StartDemo.bfstm
