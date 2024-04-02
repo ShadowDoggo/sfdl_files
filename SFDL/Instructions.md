@@ -10,7 +10,7 @@ In order to participate in the splatfests, you'll need to dump the online files 
 
 ## Downloads
 
-#### Note: If you're updating from an older version, delete the old config.cfg file.
+#### <ins>Note: If you're updating from a pre-1.0b version, delete the old config.cfg file.</ins>
 
 ### Windows:
 
