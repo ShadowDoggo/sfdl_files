@@ -24,6 +24,8 @@ The Python version requires Python 3.10 or newer and the [requests](https://pypi
 
 Extract these to the root of your Cemu folder (where Cemu.exe is).
 
+Defender or certain browsers may falsely detect the executable as a virus.
+
 ### Linux (beta):
 
 Distros tested so far: Ubuntu, Mint.
