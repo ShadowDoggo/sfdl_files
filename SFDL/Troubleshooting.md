@@ -20,19 +20,17 @@ This error means the app is unable to read Cemu's settings file. This is also us
 
 ## Install errors
 
-### Install failed. No such file or directory: '/...':
+### Install failed. No such file or directory: '/...' or Permission denied '/...:
 
 <img src="./img/ts4.png" width=400/>
 
-This error means the app couldn't install the splatfest files. It can be caused by an incorrect region or MLC path, the app not having write permissions to the MLC folder, the boss data folder not existing, or by something else blocking access to the files. Try launching the game with online mode enabled and entering the lobby to create the boss data. Close Cemu and check if anything else is accessing the mlc folder before installing the files.
+This error essentially means "could not install the file because the directory where the file is supposed to go doesn't exist or is inaccessible". It can be caused by an incorrect region or MLC path, the app not having write permissions to the MLC folder, the boss data folder not existing, or by something else blocking access to the files. Try launching the game with online mode enabled and entering the lobby to create the boss data. Close Cemu and check if anything else is accessing the mlc folder before installing the files.
 
 ### Write permissions:
 
 If the app is still unable to install the files, it probably means it doesn't have write permissions to the MLC and memorySearcher folders. Running the app as admin should resolve these issues.
 
 <img src="./img/ts6.png" width=200/>
-
-Alternatively, you can check the permissions for both of the folders to make sure the app can write to them.
 
 ## Download errors
 
@@ -46,7 +44,7 @@ These errors probably mean that GitHub/the API is down or having server issues. 
 
 <img src="./img/ts8.PNG" width=400/>
 
-These errors mean that you don't have an internet connection, or the app is blocked by your firewall/antivirus. Running the app as admin should fix this issue. If not, you'll need to whitelist it in your firewall settings.
+These errors mean that you don't have an internet connection, the app is blocked by your firewall/antivirus or some other error occured while downloading. Make sure your internet connection is working properly. Running the app as admin may also fix this issue.
 
 ## Other errors
 
@@ -60,11 +58,11 @@ This error means the app doesn't have write permissions to the Cemu folder. If i
 
 <img src="./img/ts10.png" width=400/>
 
-The app's executable is unsigned, so Windows Defender detects it as suspicious. To get around this, click More info > Run anyway.
+The app's executable is unsigned, so Windows Defender detects it as suspicious. To get around this, click More info > Run anyway. If you're still unable to run it, use the python version instead.
 
 ### Unhandled exception in script:
 
-This is a rare error that occurs if something went really wrong. It can be caused by a corrupted executable, weird permission issues, a broken VC++ instalation and other issues with your system. Try deleting the app's executable and running the updater again.
+This error means the app encountered an error it was not made to handle and crashed. It can also be caused by a corrupt executable.
 
 If the message says anything about "readconfig", delete the app's config file (sfdl/config.cfg).
 

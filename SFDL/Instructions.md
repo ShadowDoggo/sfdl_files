@@ -14,6 +14,8 @@ In order to participate in the splatfests, you'll need to dump the online files 
 
 ### Windows:
 
+Available as a standalone executable and python script.
+
 The Python version requires Python 3.10 or newer and the [requests](https://pypi.org/project/requests/) module.
 
 [Executable](https://github.com/ShadowDoggo/sfdl_files/raw/main/SFDL/SFDL_Cemu.exe)
@@ -76,7 +78,7 @@ You can now participate in splatfest matches! Get your splatfest team role and h
 
 Click the Uninstall Files button. Your game should now be back to normal.
 
-To restore your previous memorySearcher file, copy the 00050000(titleid).bak file from the sfdl folder to the memorySearcher folder and remove the .bak extension.
+To restore your previous memorySearcher file, copy the 00050000(titleid).ini.bak file from the sfdl folder to the memorySearcher folder and remove the .bak extension.
 
 ##
 
