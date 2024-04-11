@@ -18,11 +18,11 @@ Available as a standalone executable and python script.
 
 The Python version requires Python 3.10 or newer and the [requests](https://pypi.org/project/requests/) module.
 
-[Executable](https://github.com/ShadowDoggo/sfdl_files/raw/main/SFDL/SFDL_Cemu.exe)
+[Executable](https://github.com/ShadowDoggo/sfdl_files/raw/main/SFDL/sfdl_cemu_win_exec.zip)
 
 [Python script](https://github.com/ShadowDoggo/sfdl_files/raw/main/SFDL/sfdl_for_cemu_win.zip)
 
-Extract these to the root of your Cemu folder (where Cemu.exe is).
+Extract the .exe/.py file and the sfdl folder to the root of your Cemu folder (where Cemu.exe is).
 
 Defender or certain browsers may falsely detect the executable as a virus.
 
