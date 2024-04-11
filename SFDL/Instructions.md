@@ -18,7 +18,7 @@ Available as a standalone executable and python script.
 
 The Python version requires Python 3.10 or newer and the [requests](https://pypi.org/project/requests/) module.
 
-[Executable](https://github.com/ShadowDoggo/sfdl_files/raw/main/SFDL/sfdl_cemu_win_exec.zip)
+[Executable](https://github.com/ShadowDoggo/sfdl_files/raw/main/SFDL/sfdl_for_cemu_win_exec.zip)
 
 [Python script](https://github.com/ShadowDoggo/sfdl_files/raw/main/SFDL/sfdl_for_cemu_win.zip)
 
