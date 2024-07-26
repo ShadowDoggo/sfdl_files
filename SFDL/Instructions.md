@@ -6,7 +6,7 @@ If you're encountering an error or any of the steps are unclear, check the [Trou
 
 ## Online files
 
-In order to participate in the splatfests, you'll need to dump the online files from your Wii U using [this](https://cemu.cfw.guide/online-play.html) guide. Pretendo servers **do not** work with the splatfests at the moment.
+In order to participate in the splatfests, you'll need to dump the online files from your Wii U using [this](https://cemu.cfw.guide/online-play.html) guide.
 
 ## Downloads
 
@@ -28,7 +28,7 @@ Defender or certain browsers may falsely detect the executable as a virus.
 
 ### Linux (beta):
 
-Distros tested so far: Ubuntu, Mint.
+Distros tested so far: Ubuntu, Mint, Manjaro.
 
 Available only as Python script. Requires Python 3.10 or newer and the [requests](https://pypi.org/project/requests/) module.
 
